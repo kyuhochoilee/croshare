@@ -1,12 +1,9 @@
-import logo from "./logo.svg";
-import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Sup croshare gang</p>
+      <header className="text-3xl">
+        <p className=" text-cyan-700">Sup croshare gang</p>
       </header>
     </div>
   );
