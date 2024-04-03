@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/account" element = {<Account />} />
+          <Route path="/account" element = {<Account profilePic={'/quinnpfp.jpg'} username={'quinnliu'} />} />
         </Routes>
       </BrowserRouter>
     </>

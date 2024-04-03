@@ -7,8 +7,10 @@ import { Link } from 'react-router-dom';
 const Navigation = () => {
     return (
       <>
-        <div className="flex flex-row justify-between align-middle w-full p-4 text-3xl bg-white">
-          <FontAwesomeIcon icon={faHome} />
+        <div className="flex flex-row justify-between items-center w-full py-3 px-12 text-2xl bg-white">
+          <Link to="/">
+            <FontAwesomeIcon icon={faHome} />
+          </Link>
           <FontAwesomeIcon icon={faUserGroup} />
           <Link to="/account">
             <FontAwesomeIcon icon={faUser} />
