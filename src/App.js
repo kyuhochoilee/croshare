@@ -1,11 +1,14 @@
+import Navigation from "./components/Navigation";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="App">
-      <header className="text-3xl">
-        <p className=" text-cyan-700">Sup croshare gang</p>
-      </header>
-    </div>
+    <>
+      <Home />
+      <div className="fixed inset-x-0 bottom-0">  
+        <Navigation />
+      </div>
+    </>
   );
 }
 
