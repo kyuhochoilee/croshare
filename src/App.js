@@ -1,13 +1,17 @@
-import Navigation from "./components/Navigation";
 import Home from "./components/Home";
+import Account from "./components/Account";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
     <>
-      <Home />
-      <div className="fixed inset-x-0 bottom-0">  
-        <Navigation />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/account" element = {<Account />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
