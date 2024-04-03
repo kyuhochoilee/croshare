@@ -11,7 +11,9 @@ const Navigation = () => {
           <Link to="/">
             <FontAwesomeIcon icon={faHome} />
           </Link>
-          <FontAwesomeIcon icon={faUserGroup} />
+          <Link to='/friendfeed'>
+            <FontAwesomeIcon icon={faUserGroup} />
+          </Link>
           <Link to="/account">
             <FontAwesomeIcon icon={faUser} />
           </Link>
