@@ -5,7 +5,6 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import HomePost from './HomePost';
 import { Link } from 'react-router-dom';
 
-
 const Home = () => {
     return (
       <>
@@ -26,6 +25,7 @@ const Home = () => {
                 <HomePost className='h-1/3' img={'/awesomeHat.webp'} title={'Awesome Hat'} user={'quinnliu'} profilePic={'/quinnpfp.jpg'} rating={4.8} time={5} difficulty={'Easy'} stitch={3}/>
             </div>
         </div>
+        
         <div className="fixed inset-x-0 bottom-0">  
             <Navigation />
         </div>
