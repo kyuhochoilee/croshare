@@ -17,6 +17,7 @@ function App() {
             }
           />
           <Route path="/friendfeed" element={<FriendFeed />} />
+          <Route path="/pattern" element={<Pattern />} />
         </Routes>
       </BrowserRouter>
     </>
