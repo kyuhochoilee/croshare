@@ -8,6 +8,7 @@ import {
   faChartSimple,
   faXmarksLines,
   faPalette,
+  faAngleLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import HomePost from "./HomePost";
@@ -26,7 +27,6 @@ const Pattern = () => {
     stitch,
     color,
   } = location.state;
-  console.log(JSON.stringify(location, null, 2));
 
   const wholeStars = Math.floor(rating);
   const halfStar = rating % 1 !== 0;
@@ -39,7 +39,14 @@ const Pattern = () => {
   return (
     <>
       <div className="flex flex-col pb-4">
-        <h1 className="pt-10 pb-4 text-2xl text-black font-bold text-center underline">
+        <Link to="/" className="absolute top-0 left-0 p-5">
+          <FontAwesomeIcon
+            className="text-2xl cursor-pointer"
+            icon={faAngleLeft}
+          />
+        </Link>
+
+        <h1 className="pt-4 pb-4 text-2xl text-black font-bold text-center underline">
           {username}'s {title}
         </h1>
         <img src={img} className="w-3/4 mx-auto rounded-2xl pt-2 pb-2" />
