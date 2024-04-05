@@ -39,7 +39,7 @@ const Pattern = () => {
   return (
     <>
       <div className="flex flex-col pb-4">
-        <h1 className="pt-8 pb-4 text-2xl text-black font-bold text-center underline">
+        <h1 className="pt-10 pb-4 text-2xl text-black font-bold text-center underline">
           {username}'s {title}
         </h1>
         <img src={img} className="w-3/4 mx-auto rounded-2xl pt-2 pb-2" />
@@ -78,31 +78,50 @@ const Pattern = () => {
           {rating} stars based on 1234 reviews
         </div>
 
-        <div className="pt-2">
-          <table className="table-auto mx-auto pt-2">
+        <div className="pt-4">
+          <h2 className="text-lg text-black font-bold text-left underline pl-12 pb-2">
+            Metrics
+          </h2>
+          <table className="table-auto mx-auto w-3/4 bg-yellow-200 border-2 border-separate border-black rounded-xl border-spacing-0">
             <tbody>
               <tr>
-                <td className="border px-4 py-2 text-center font-semibold">
+                <td className="px-4 py-3 text-center font-semibold border-r-2 border-black ">
                   <FontAwesomeIcon icon={faClock} className="mr-2" />
                   {time} hours
                 </td>
-                <td className="border px-4 py-2 text-center font-semibold">
+                <td className="px-4 py-3 text-center font-semibold ">
                   <FontAwesomeIcon icon={faChartSimple} className="mr-2" />
                   {difficulty}
                 </td>
               </tr>
               <tr>
-                <td className="border px-4 py-2 text-center font-semibold">
+                <td className="px-4 py-3 text-center font-semibold  border-t-2 border-r-2 border-black">
                   <FontAwesomeIcon icon={faXmarksLines} className="mr-2" />
                   {stitch} stitches
                 </td>
-                <td className="border px-4 py-2 text-center font-semibold">
+                <td className="px-4 py-3 text-center font-semibold  border-t-2 border-black">
                   <FontAwesomeIcon icon={faPalette} className="mr-2" />
                   {color} color(s)
                 </td>
               </tr>
             </tbody>
           </table>
+        </div>
+
+        <div className="pt-4">
+          <h2 className="text-lg text-black font-bold text-left underline pl-12 pb-2">
+            Description
+          </h2>
+          <p className="text-left pl-12 pr-12 text-grey">
+            Now let me tell you about this pattern. Ohhhhh it is so nice. Like
+            you would not beleive it. Even though it is in fact called an
+            awesome hat, I don't think the name "awesome" really does it
+            justice. But then I'd be like tooting my own horn about How awesome
+            I made the hat, so we can just leave it at plain awesome.
+          </p>
+        </div>
+        <div className="fixed inset-x-0 bottom-0 z-20">
+          <Navigation />
         </div>
       </div>
     </>
