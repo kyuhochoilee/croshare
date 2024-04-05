@@ -9,6 +9,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+
           <Route path="/" element={<Home />} />
           <Route
             path="/account"
@@ -17,7 +18,7 @@ function App() {
             }
           />
           <Route path="/friendfeed" element={<FriendFeed />} />
-          <Route path="/pattern" element={<Pattern />} />
+          <Route path="/pattern" element={<Pattern />} />          
         </Routes>
       </BrowserRouter>
     </>

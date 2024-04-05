@@ -267,10 +267,8 @@ const HomePost = ({
                 </div>
                 <Link
                   className="p-2 bg-blue-300 rounded-md"
-                  to={{
-                    pathname: "/pattern",
-                    state: { username: user },
-                  }}
+                  to={"/pattern"}
+                  state={{img: img, title: title, profilePic, rating: rating, time: time, difficulty: difficulty,stitch: stitch, username: user}}
                 >
                   View More
                 </Link>
