@@ -1,16 +1,10 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faUserGroup } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
-
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome, faUser, faUserGroup } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const HomePostDetails = () => {
-    return (
-      <>
+  return <></>;
+};
 
-      </>
-    );
-}
-  
-  export default HomePostDetails;
-  
+export default HomePostDetails;

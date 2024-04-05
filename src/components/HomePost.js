@@ -26,6 +26,7 @@ const HomePost = ({
   time,
   difficulty,
   stitch,
+  color,
 }) => {
   const [postClicked, setClicked] = useState(false);
   const [liked, setLiked] = useState(false);
@@ -268,7 +269,17 @@ const HomePost = ({
                 <Link
                   className="p-2 bg-blue-300 rounded-md"
                   to={"/pattern"}
-                  state={{img: img, title: title, profilePic, rating: rating, time: time, difficulty: difficulty,stitch: stitch, username: user}}
+                  state={{
+                    img: img,
+                    title: title,
+                    profilePic,
+                    rating: rating,
+                    time: time,
+                    difficulty: difficulty,
+                    stitch: stitch,
+                    username: user,
+                    color: color,
+                  }}
                 >
                   View More
                 </Link>
