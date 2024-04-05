@@ -8,7 +8,6 @@ import { Link, useLocation, useParams } from "react-router-dom";
 const Pattern = () => {
   let location = useLocation();
   let { username, img, title, profilePic, rating, time, difficulty, stitch } = location.state;
-  console.log(JSON.stringify(location, null, 2));
   return (
     <>
       <div className="flex flex-col w-1/2 pb-4">

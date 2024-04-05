@@ -1,7 +1,5 @@
 import React from 'react';
-import Navigation from "./Navigation";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
+import Navigation from "../Navigation";
 import FriendPost from './FriendPost';
 
 const FriendFeed = ({profilePic, username}) => {

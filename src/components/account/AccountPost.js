@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from "./Navigation";
+import Navigation from "../Navigation";
 import { useState } from 'react';
 
 const AccountPost = ({title, postPic}) => {

@@ -13,7 +13,6 @@ import {
   faAngleLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import HomePostDetails from "./HomePostDetails";
 import { useState } from "react";
 import Navigation from "./Navigation";
 
@@ -183,95 +182,95 @@ const HomePost = ({
           </div>
           <div className="absolute top-0 inset-0 z-20 bg-white bg-opacity-50">
             <div className="flex flex-col items-center justify-center min-h-screen">
-              <div className="bg-amber-100 h-96 w-4/5 rounded-xl p-4 shadow-xl">
-                <FontAwesomeIcon
-                  className="text-2xl z-40"
-                  onClick={() => setClicked(!postClicked)}
-                  icon={faAngleLeft}
-                />
-                <div className="flex flex-col items-center pb-2">
-                  <p className="font-bold text-lg w-auto">{title} Metrics</p>
-                  <FontAwesomeIcon className="text-2xl py-2" icon={faClock} />
-                  <div className="flex flex-col items-start w-full">
-                    <div className="flex-grow flex flex-row items-center pt-1 pb-1">
-                      <div className="pr-12 text-xs">&lt; 3 hr</div>
-                      <div
-                        className="px-12 bg-blue-500 py-2"
-                        style={{ width: `${difficulty * 10}%` }}
-                      ></div>
-                      <div className="pl-2 text-xs">12%</div>
+                <div className="bg-amber-100 h-96 w-4/5 rounded-xl p-4 shadow-xl">
+                    <FontAwesomeIcon
+                    className="text-xl z-40"
+                    onClick={() => setClicked(!postClicked)}
+                    icon={faAngleLeft}
+                    />
+                    <div className="flex flex-col items-center pb-2">
+                    <p className="font-bold text-lg w-auto">{title} Metrics</p>
+                    <FontAwesomeIcon className="text-2xl py-2" icon={faClock} />
+                    <div className="flex flex-col items-start w-full">
+                        <div className="flex-grow flex flex-row items-center pt-1 pb-1">
+                        <div className="pr-12 text-xs">&lt; 3 hr</div>
+                        <div
+                            className="px-12 bg-blue-500 py-2"
+                            style={{ width: `${difficulty * 10}%` }}
+                        ></div>
+                        <div className="pl-2 text-xs">12%</div>
+                        </div>
+                        <div className="flex-grow flex flex-row items-center pb-1">
+                        <div className="pr-12 text-xs">&lt; 4 hr</div>
+                        <div
+                            className="px-8 bg-blue-500 py-2"
+                            style={{ width: `${difficulty * 10}%` }}
+                        ></div>
+                        <div className="pl-2 text-xs">12%</div>
+                        </div>
+                        <div className="flex-grow flex flex-row items-center pb-1">
+                        <div className="pr-12 text-xs">&lt; 5 hr</div>
+                        <div
+                            className="px-16 bg-blue-500 py-2"
+                            style={{ width: `${difficulty * 10}%` }}
+                        ></div>
+                        <div className="pl-2 text-xs">12%</div>
+                        </div>
+                        <div className="flex-grow flex flex-row items-center pb-1">
+                        <div className="pr-12 text-xs"> &gt; 6 hr</div>
+                        <div
+                            className="px-4 bg-blue-500 py-2"
+                            style={{ width: `${difficulty * 10}%` }}
+                        ></div>
+                        <div className="pl-2 text-xs">12%</div>
+                        </div>
                     </div>
-                    <div className="flex-grow flex flex-row items-center pb-1">
-                      <div className="pr-12 text-xs">&lt; 4 hr</div>
-                      <div
-                        className="px-8 bg-blue-500 py-2"
-                        style={{ width: `${difficulty * 10}%` }}
-                      ></div>
-                      <div className="pl-2 text-xs">12%</div>
+                    <FontAwesomeIcon
+                        className="text-2xl py-2"
+                        icon={faChartBar}
+                    />
+                    <div className="flex flex-col items-start w-full pb-4">
+                        <div className="flex-grow flex flex-row items-center pt-1 pb-1">
+                        <div className="pr-8 text-xs">Beginner</div>
+                        <div
+                            className="px-16 bg-green-500 py-2"
+                            style={{ width: `${difficulty * 10}%` }}
+                        ></div>
+                        <div className="pl-2 text-xs">12%</div>
+                        </div>
+                        <div className="flex-grow flex flex-row items-center pb-1">
+                        <div className="pr-11 text-xs">Novice</div>
+                        <div
+                            className="px-8 bg-green-500 py-2"
+                            style={{ width: `${difficulty * 10}%` }}
+                        ></div>
+                        <div className="pl-2 text-xs">12%</div>
+                        </div>
+                        <div className="flex-grow flex flex-row items-center pb-1">
+                        <div className="pr-3 text-xs">Intermediate</div>
+                        <div
+                            className="px-12 bg-green-500 py-2"
+                            style={{ width: `${difficulty * 10}%` }}
+                        ></div>
+                        <div className="pl-2 text-xs">12%</div>
+                        </div>
+                        <div className="flex-grow flex flex-row items-center pb-1">
+                        <div className="pr-12 text-xs">Expert</div>
+                        <div
+                            className="px-8 bg-green-500 py-2"
+                            style={{ width: `${difficulty * 10}%` }}
+                        ></div>
+                        <div className="pl-2 text-xs">12%</div>
+                        </div>
                     </div>
-                    <div className="flex-grow flex flex-row items-center pb-1">
-                      <div className="pr-12 text-xs">&lt; 5 hr</div>
-                      <div
-                        className="px-16 bg-blue-500 py-2"
-                        style={{ width: `${difficulty * 10}%` }}
-                      ></div>
-                      <div className="pl-2 text-xs">12%</div>
-                    </div>
-                    <div className="flex-grow flex flex-row items-center pb-1">
-                      <div className="pr-12 text-xs"> &gt; 6 hr</div>
-                      <div
-                        className="px-4 bg-blue-500 py-2"
-                        style={{ width: `${difficulty * 10}%` }}
-                      ></div>
-                      <div className="pl-2 text-xs">12%</div>
-                    </div>
-                  </div>
-                  <FontAwesomeIcon
-                    className="text-2xl py-2"
-                    icon={faChartBar}
-                  />
-                  <div className="flex flex-col items-start w-full">
-                    <div className="flex-grow flex flex-row items-center pt-1 pb-1">
-                      <div className="pr-8 text-xs">Beginner</div>
-                      <div
-                        className="px-16 bg-green-500 py-2"
-                        style={{ width: `${difficulty * 10}%` }}
-                      ></div>
-                      <div className="pl-2 text-xs">12%</div>
-                    </div>
-                    <div className="flex-grow flex flex-row items-center pb-1">
-                      <div className="pr-11 text-xs">Novice</div>
-                      <div
-                        className="px-8 bg-green-500 py-2"
-                        style={{ width: `${difficulty * 10}%` }}
-                      ></div>
-                      <div className="pl-2 text-xs">12%</div>
-                    </div>
-                    <div className="flex-grow flex flex-row items-center pb-1">
-                      <div className="pr-3 text-xs">Intermediate</div>
-                      <div
-                        className="px-12 bg-green-500 py-2"
-                        style={{ width: `${difficulty * 10}%` }}
-                      ></div>
-                      <div className="pl-2 text-xs">12%</div>
-                    </div>
-                    <div className="flex-grow flex flex-row items-center pb-1">
-                      <div className="pr-12 text-xs">Expert</div>
-                      <div
-                        className="px-8 bg-green-500 py-2"
-                        style={{ width: `${difficulty * 10}%` }}
-                      ></div>
-                      <div className="pl-2 text-xs">12%</div>
-                    </div>
-                  </div>
+                    <Link
+                        className="p-1.5 bg-blue-400 rounded-md text-sm text-white"
+                        to={"/pattern"}
+                        state={{img: img, title: title, profilePic, rating: rating, time: time, difficulty: difficulty,stitch: stitch, username: user}}
+                        >
+                        View More
+                    </Link>
                 </div>
-                <Link
-                  className="p-2 bg-blue-300 rounded-md"
-                  to={"/pattern"}
-                  state={{img: img, title: title, profilePic, rating: rating, time: time, difficulty: difficulty,stitch: stitch, username: user}}
-                >
-                  View More
-                </Link>
               </div>
               <div className="fixed inset-x-0 bottom-0 z-20">
                 <Navigation />
