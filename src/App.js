@@ -1,8 +1,8 @@
 import Home from "./components/Home";
 import Account from "./components/Account";
 import FriendFeed from "./components/FriendFeed";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import Pattern from "./components/Pattern";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -10,8 +10,13 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/account" element = {<Account profilePic={'/quinnpfp.jpg'} username={'quinnliu'} />} />
-          <Route path="/friendfeed" element = {<FriendFeed />} />
+          <Route
+            path="/account"
+            element={
+              <Account profilePic={"/quinnpfp.jpg"} username={"quinnliu"} />
+            }
+          />
+          <Route path="/friendfeed" element={<FriendFeed />} />
         </Routes>
       </BrowserRouter>
     </>
