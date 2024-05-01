@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navigation from "./Navigation";
+import Navigation from "../Navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faStar,
@@ -11,7 +11,7 @@ import {
   faAngleLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import HomePost from "./HomePost";
+import HomePost from "../HomePost";
 import { Link, useLocation, useParams } from "react-router-dom";
 
 const Pattern = () => {
@@ -50,54 +50,71 @@ const Pattern = () => {
           {username}'s {title}
         </h1>
         <img src={img} className="w-3/4 mx-auto rounded-2xl pt-2 pb-2" />
-        <div className="flex items-center justify-center">
-          {[...Array(wholeStars)].map((e, i) => (
-            <FontAwesomeIcon
-              className="pl-1/2 pr-1"
-              key={i}
-              icon={faStar}
-              color="gold"
-              style={starStyle}
-              size="lg"
-            />
-          ))}
-          {halfStar && (
-            <FontAwesomeIcon
-              className="pl-1/2"
-              icon={faStarHalfAlt}
-              color="gold"
-              style={starStyle}
-              size="lg"
-            />
-          )}
-          {[...Array(emptyStars)].map((e, i) => (
-            <FontAwesomeIcon
-              className="pl-1/2"
-              key={i + wholeStars + (halfStar ? 1 : 0)}
-              icon={["far", "star"]}
-              color="gray"
-              style={starStyle}
-              size="lg"
-            />
-          ))}
-        </div>
-        <div className="pl-2 text-sm text-center pt-1">
-          {rating} stars based on 1234 reviews
-        </div>
-
         <div className="flex justify-center p-2">
-          <div className="bg-blue-200 rounded-full border-2 border-black px-4 py-2 mx-2 font-semibold">
+          <div className="bg-blue-200 rounded-full border-2 border-black px-2 py-1 mx-2 font-semibold">
             View Pattern
           </div>
-          <div className="bg-blue-200 rounded-full  border-2 border-black px-4 py-2 mx-2 font-semibold">
+          <div className="bg-blue-200 rounded-full  border-2 border-black px-2 py-1 mx-2 font-semibold">
             Download Pattern
           </div>
+          <Link
+            className="bg-blue-200 rounded-full  border-2 border-black px-2 py-1 mx-2 font-semibold"
+            to={"/reviews"}
+            state={{
+              username: username,
+              img: img,
+              title: title,
+              profilePic: profilePic,
+              rating: rating,
+              time: time,
+              difficulty: difficulty,
+              stitch: stitch,
+              color: color,
+            }}
+          >
+            Reviews
+          </Link>
         </div>
 
         <div className="pt-4">
           <h2 className="text-lg text-black font-bold text-left underline pl-12 pb-2">
             Metrics
           </h2>
+          <div className="flex items-center justify-center">
+            {[...Array(wholeStars)].map((e, i) => (
+              <FontAwesomeIcon
+                className="pl-1/2 pr-1"
+                key={i}
+                icon={faStar}
+                color="gold"
+                style={starStyle}
+                size="lg"
+              />
+            ))}
+            {halfStar && (
+              <FontAwesomeIcon
+                className="pl-1/2"
+                icon={faStarHalfAlt}
+                color="gold"
+                style={starStyle}
+                size="lg"
+              />
+            )}
+            {[...Array(emptyStars)].map((e, i) => (
+              <FontAwesomeIcon
+                className="pl-1/2"
+                key={i + wholeStars + (halfStar ? 1 : 0)}
+                icon={["far", "star"]}
+                color="gray"
+                style={starStyle}
+                size="lg"
+              />
+            ))}
+          </div>
+          <div className="pl-2 text-sm text-center pt-1 pb-2">
+            {rating} stars based on 1234 reviews
+          </div>
+
           <table className="table-auto mx-auto w-3/4 bg-yellow-200 border-2 border-separate border-black rounded-xl border-spacing-0">
             <tbody>
               <tr>

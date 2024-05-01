@@ -1,16 +1,16 @@
 import Home from "./components/Home";
 import Account from "./components/account/Account";
 import FriendFeed from "./components/friend feed/FriendFeed";
-import Pattern from "./components/Pattern";
+import Pattern from "./components/pattern/Pattern";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FriendPostSelected from "./components/friend feed/FriendPostSelected";
+import ReviewsPage from "./components/pattern/ReviewsPage";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-
           <Route path="/" element={<Home />} />
           <Route
             path="/account"
@@ -20,7 +20,8 @@ function App() {
           />
           <Route path="/friendfeed" element={<FriendFeed />} />
           <Route path="/friendpost" element={<FriendPostSelected />} />
-          <Route path="/pattern" element={<Pattern />} />          
+          <Route path="/pattern" element={<Pattern />} />
+          <Route path="/reviews" element={<ReviewsPage />} />
         </Routes>
       </BrowserRouter>
     </>
