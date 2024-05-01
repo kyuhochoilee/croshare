@@ -12,7 +12,7 @@ const AccountPost = ({title, postPic, likes}) => {
             <div className='flex flex-row justify-between items-center pt-1'>
               <p className='text-sm' >{title}</p>
               <div className='flex flex-row items-center'>
-                <FontAwesomeIcon icon={faHeart} className="text-xs text-gray-700" />
+                <FontAwesomeIcon icon={faHeart} className="text-xs text-red-300" />
                 <p className='text-sm pl-1.5'>{likes}</p>
               </div>
             </div>
