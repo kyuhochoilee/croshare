@@ -60,7 +60,7 @@ const HomePost = ({
               <div className="flex flex-row items-center">
                 <Link
                   to={"/account"}
-                  className="absolute bottom-0 left-1 transform translate-y-1/2 flex flex-row items-center bg-blue-300 p-1.5 rounded-2xl h-9 z-10"
+                  className="absolute bottom-0 left-1 transform translate-y-1/2 flex flex-row items-center bg-teal-500 p-1.5 rounded-2xl h-9 z-10"
                 >
                   <img
                     src={profilePic}
