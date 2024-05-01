@@ -77,7 +77,7 @@ const HomePost = ({
                 </Link>
 
                 <div
-                  className="flex items-center justify-center absolute bottom-0 right-2 transform translate-y-1/2 bg-blue-300 p-1.5 w-8 h-8 rounded-full"
+                  className="flex items-center justify-center absolute bottom-0 right-2 transform translate-y-1/2 bg-red-300 p-1.5 w-8 h-8 rounded-full"
                   onClick={() => setLiked(!liked)}
                 >
                   {liked ? (
@@ -97,7 +97,7 @@ const HomePost = ({
             onClick={() => setClicked(!postClicked)}
           >
             <div className="relative flex flex-row items-center pt-8 px-4">
-              <p className="absolute left-2 font-semibold text-lg pt-1 ">
+              <p className="absolute left-2 font-semibold text-lg py-2 ">
                 {title}
               </p>
               <div className="absolute right-4 flex flex-row items-center text-sm pt-1">
@@ -106,7 +106,7 @@ const HomePost = ({
               </div>
             </div>
             <div
-              className="relative flex flex-row pt-6 px-4 justify-between text-xs"
+              className="relative flex flex-row mt-6 px-2 py-1 justify-between text-xs border rounded-full bg-gray-100"
               onClick={() => setClicked(!postClicked)}
             >
               <div className="flex flex-row items-center">
@@ -214,14 +214,16 @@ const HomePost = ({
           </div>
           <div className="absolute top-0 inset-0 z-20 bg-white bg-opacity-50">
             <div className="flex flex-col items-center justify-center min-h-screen">
-              <div className="bg-yellow-100 h-96 w-4/5 rounded-xl p-4 shadow-xl">
+              <div className="bg-yellow-300 h-96 w-4/5 rounded-xl p-4 shadow-xl">
                 <FontAwesomeIcon
                   className="text-2xl z-40"
                   onClick={() => setClicked(!postClicked)}
                   icon={faAngleLeft}
                 />
                 <div className="flex flex-col items-center pb-2">
-                  <p className="font-bold text-lg w-auto">{title} Metrics</p>
+                  <p className="font-bold text-xl mb-3 w-auto">
+                    {title} Metrics
+                  </p>
                   <FontAwesomeIcon className="text-2xl py-2" icon={faClock} />
                   <div className="flex flex-col items-start w-full">
                     <div className="flex-grow flex flex-row items-center pt-1 pb-1">

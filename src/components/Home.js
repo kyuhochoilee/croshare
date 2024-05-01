@@ -35,7 +35,7 @@ const Home = () => {
             className="h-1/3"
             img={"/patternImgs/dress.jpg"}
             title={"Beach Dress"}
-            user={"quinnliu"}
+            user={"alyanton"}
             profilePic={"/quinnpfp.jpg"}
             rating={4.8}
             time={5}
@@ -49,7 +49,7 @@ const Home = () => {
             className="h-1/3"
             img={"/patternImgs/pants.jpg"}
             title={"Striped Pants"}
-            user={"quinnliu"}
+            user={"kyuholee"}
             profilePic={"/quinnpfp.jpg"}
             rating={4.8}
             time={5}
@@ -61,7 +61,7 @@ const Home = () => {
             className="h-1/3"
             img={"/patternImgs/top.jpg"}
             title={"Tied Top"}
-            user={"quinnliu"}
+            user={"diannatr"}
             profilePic={"/quinnpfp.jpg"}
             rating={4.8}
             time={5}
@@ -75,7 +75,7 @@ const Home = () => {
             className="h-1/3"
             img={"/patternImgs/strawberryDress.jpg"}
             title={"Picnic Dress"}
-            user={"quinnliu"}
+            user={"mainaiya"}
             profilePic={"/quinnpfp.jpg"}
             rating={4.8}
             time={5}
@@ -87,7 +87,7 @@ const Home = () => {
             className="h-1/3"
             img={"/patternImgs/puffyHat.jpg"}
             title={"Winter Hat"}
-            user={"quinnliu"}
+            user={"williamts"}
             profilePic={"/quinnpfp.jpg"}
             rating={4.8}
             time={5}
@@ -101,7 +101,7 @@ const Home = () => {
             className="h-1/3"
             img={"/patternImgs/ducks.jpg"}
             title={"Baby Ducks"}
-            user={"quinnliu"}
+            user={"clairybeary"}
             profilePic={"/quinnpfp.jpg"}
             rating={4.8}
             time={5}
@@ -113,7 +113,7 @@ const Home = () => {
             className="h-1/3"
             img={"/patternImgs/scarf.jpg"}
             title={"Thick Scarf"}
-            user={"quinnliu"}
+            user={"johnnydang"}
             profilePic={"/quinnpfp.jpg"}
             rating={4.8}
             time={5}

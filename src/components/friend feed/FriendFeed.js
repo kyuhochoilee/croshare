@@ -23,14 +23,12 @@ const FriendFeed = ({ profilePic, username }) => {
           />
 
           <FriendPost
-            title={"Quinnliu started making Striped Pants"}
-            postPic={"/awesomeHat.webp"}
+            title={"New project: Striped Pants"}
+            postPic={"/friendsProg/new.png"}
             postTime={"45 min ago"}
-            description={
-              "I really like this hat. This hat is awesome. I really like the flames, I feel like lightning mcqueen."
-            }
+            description={""}
             profilePic={"/quinnpfp.jpg"}
-            username={"quinnliu"}
+            username={"williamts"}
           />
 
           <FriendPost
@@ -45,12 +43,22 @@ const FriendFeed = ({ profilePic, username }) => {
           />
 
           <FriendPost
-            title={"kyuholee made progress on Winter Scarf"}
-            postPic={"/awesomeHat.webp"}
+            title={"Kyuholee made progress on Winter Scarf!"}
+            postPic={"/friendsProg/prog.png"}
             postTime={"6 hr ago"}
             description={""}
             profilePic={"/quinnpfp.jpg"}
-            username={"quinnliu"}
+            username={"kyuholee"}
+          />
+          <FriendPost
+            title={"Can anyone test this pattern for me?"}
+            postPic={"/patternImgs/top.jpg"}
+            postTime={"9 hr ago"}
+            description={
+              "If you can, please let me know! Trying to get a sense of how accurate the size guidelines are :)"
+            }
+            profilePic={"/quinnpfp.jpg"}
+            username={"diannatr"}
           />
         </div>
       </div>

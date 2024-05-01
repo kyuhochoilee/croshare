@@ -28,11 +28,11 @@ const FriendPostSelected = () => {
             <p className="pl-2 text-sm text-white font-semibold">{username}</p>
           </div>
           <div className="flex flex-row">
-            <div className="flex items-center justify-center bg-blue-300 p-1.5 w-8 h-8 rounded-full">
+            <div className="flex items-center justify-center bg-yellow-300 p-1.5 w-8 h-8 rounded-full">
               <FontAwesomeIcon icon={faComment} className="text-white" />
             </div>
             <div className="px-1"></div>
-            <div className="flex items-center justify-center  bg-blue-300 p-1.5 w-8 h-8 rounded-full">
+            <div className="flex items-center justify-center  bg-red-300 p-1.5 w-8 h-8 rounded-full">
               <FontAwesomeIcon icon={faHeart} className="text-white" />
             </div>
           </div>
@@ -45,7 +45,7 @@ const FriendPostSelected = () => {
           Add a comment...
         </div>
         <Comment
-          username={username}
+          username={"alyanton"}
           profilePic={profilePic}
           content={
             "wow this is great! really feeling the kachow with this one!"
@@ -53,13 +53,13 @@ const FriendPostSelected = () => {
           timePosted={"8 hr ago"}
         />
         <Comment
-          username={username}
+          username={"kyuholee"}
           profilePic={profilePic}
           content={"mmmm, not a fan. do better next time"}
           timePosted={"1 hr ago"}
         />
         <Comment
-          username={username}
+          username={"diannatr"}
           profilePic={profilePic}
           content={"I CHANGED MY MIND I LOVE IT!!!!"}
           timePosted={"3 min ago"}

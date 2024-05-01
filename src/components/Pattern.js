@@ -85,6 +85,15 @@ const Pattern = () => {
           {rating} stars based on 1234 reviews
         </div>
 
+        <div className="flex justify-center p-2">
+          <div className="bg-blue-200 rounded-full border-2 border-black px-4 py-2 mx-2 font-semibold">
+            View Pattern
+          </div>
+          <div className="bg-blue-200 rounded-full  border-2 border-black px-4 py-2 mx-2 font-semibold">
+            Download Pattern
+          </div>
+        </div>
+
         <div className="pt-4">
           <h2 className="text-lg text-black font-bold text-left underline pl-12 pb-2">
             Metrics

@@ -8,7 +8,7 @@ const Comment = ({ username, profilePic, content, timePosted }) => {
       <div className="flex flex-col w-full pt-4">
         <div className="flex flex-row w-full items-center justify-between">
           <div className="flex flex-row items-center">
-            <div className="flex flex-row items-center bg-blue-300 p-1 rounded-full w-24">
+            <div className="flex flex-row items-center bg-blue-300 rounded-full w-24">
               <img src={profilePic} alt="" className="w-6 h-6 rounded-full" />
               <p className="pl-2 text-sm text-white">{username}</p>
             </div>
