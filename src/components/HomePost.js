@@ -214,7 +214,7 @@ const HomePost = ({
           </div>
           <div className="absolute top-0 inset-0 z-20 bg-white bg-opacity-50">
             <div className="flex flex-col items-center justify-center min-h-screen">
-              <div className="bg-yellow-300 h-96 w-4/5 rounded-xl p-4 shadow-xl">
+              <div className="bg-yellow-100 h-96 w-4/5 rounded-xl p-4 shadow-xl">
                 <FontAwesomeIcon
                   className="text-2xl z-40"
                   onClick={() => setClicked(!postClicked)}
