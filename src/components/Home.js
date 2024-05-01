@@ -3,23 +3,26 @@ import Navigation from "./Navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import HomePost from "./HomePost";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
-      <div className="fixed top-4 right-4 z-10 bg-amber-500 p-1.5 w-8 h-8 rounded-full flex items-center">
-        <FontAwesomeIcon
-          icon={faMagnifyingGlass}
-          className="text-white mr-1.5"
-        />
+      <div className="fixed top-0 left-0 right-0 bg-white z-50 rounded-md">
+        <p className="text-2xl font-bold pt-3 pl-3 pb-3">CroShare</p>
+        <div className="fixed top-4 right-4 z-10 bg-yellow-400 p-1.5 w-8 h-8 rounded-full flex items-center">
+          <FontAwesomeIcon
+            icon={faMagnifyingGlass}
+            className="text-white mr-2"
+          />
+        </div>
       </div>
+
       <div className="flex flex-col">
-        <div className="flex flex-row justify-between align-middle w-full">
+        <div className="flex flex-row justify-between align-middle w-full space-x-3 px-2 py-3 pt-14">
           <HomePost
             className="h-1/3"
-            img={"/awesomeHat.webp"}
-            title={"Awesome Hat"}
+            img={"/patternImgs/awesomeHat.webp"}
+            title={"Fire Hat"}
             user={"quinnliu"}
             profilePic={"/quinnpfp.jpg"}
             rating={4.8}
@@ -30,34 +33,8 @@ const Home = () => {
           />
           <HomePost
             className="h-1/3"
-            img={"/awesomeHat.webp"}
-            title={"Awesome Hat"}
-            user={"quinnliu"}
-            profilePic={"/quinnpfp.jpg"}
-            rating={4.8}
-            time={5}
-            difficulty={"Easy"}
-            stitch={3}
-            color={2}
-          />
-        </div>
-        <div className="flex flex-row justify-between align-middle w-full">
-          <HomePost
-            className="h-1/3"
-            img={"/awesomeHat.webp"}
-            title={"Awesome Hat"}
-            user={"quinnliu"}
-            profilePic={"/quinnpfp.jpg"}
-            rating={4.8}
-            time={5}
-            difficulty={"Easy"}
-            stitch={3}
-            color={2}
-          />
-          <HomePost
-            className="h-1/3"
-            img={"/awesomeHat.webp"}
-            title={"Awesome Hat"}
+            img={"/patternImgs/dress.jpg"}
+            title={"Beach Dress"}
             user={"quinnliu"}
             profilePic={"/quinnpfp.jpg"}
             rating={4.8}
@@ -67,11 +44,11 @@ const Home = () => {
             color={2}
           />
         </div>
-        <div className="flex flex-row justify-between align-middle w-full">
+        <div className="flex flex-row justify-between align-middle w-full space-x-3 px-2 py-2">
           <HomePost
             className="h-1/3"
-            img={"/awesomeHat.webp"}
-            title={"Awesome Hat"}
+            img={"/patternImgs/pants.jpg"}
+            title={"Striped Pants"}
             user={"quinnliu"}
             profilePic={"/quinnpfp.jpg"}
             rating={4.8}
@@ -82,8 +59,60 @@ const Home = () => {
           />
           <HomePost
             className="h-1/3"
-            img={"/awesomeHat.webp"}
-            title={"Awesome Hat"}
+            img={"/patternImgs/top.jpg"}
+            title={"Tied Top"}
+            user={"quinnliu"}
+            profilePic={"/quinnpfp.jpg"}
+            rating={4.8}
+            time={5}
+            difficulty={"Easy"}
+            stitch={3}
+            color={2}
+          />
+        </div>
+        <div className="flex flex-row justify-between align-middle w-full space-x-3  px-2 py-2">
+          <HomePost
+            className="h-1/3"
+            img={"/patternImgs/strawberryDress.jpg"}
+            title={"Picnic Dress"}
+            user={"quinnliu"}
+            profilePic={"/quinnpfp.jpg"}
+            rating={4.8}
+            time={5}
+            difficulty={"Easy"}
+            stitch={3}
+            color={2}
+          />
+          <HomePost
+            className="h-1/3"
+            img={"/patternImgs/puffyHat.jpg"}
+            title={"Winter Hat"}
+            user={"quinnliu"}
+            profilePic={"/quinnpfp.jpg"}
+            rating={4.8}
+            time={5}
+            difficulty={"Easy"}
+            stitch={3}
+            color={2}
+          />
+        </div>
+        <div className="flex flex-row justify-between align-middle w-full space-x-3  px-2 py-2">
+          <HomePost
+            className="h-1/3"
+            img={"/patternImgs/ducks.jpg"}
+            title={"Baby Ducks"}
+            user={"quinnliu"}
+            profilePic={"/quinnpfp.jpg"}
+            rating={4.8}
+            time={5}
+            difficulty={"Easy"}
+            stitch={3}
+            color={2}
+          />
+          <HomePost
+            className="h-1/3"
+            img={"/patternImgs/scarf.jpg"}
+            title={"Thick Scarf"}
             user={"quinnliu"}
             profilePic={"/quinnpfp.jpg"}
             rating={4.8}

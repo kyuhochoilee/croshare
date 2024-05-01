@@ -34,50 +34,81 @@ const HomePost = ({
     <>
       {!postClicked ? (
         <div className="flex flex-col w-1/2 pb-4">
-          <div className="flex flex-col relative" style={{ height: "33.33vh" }}>
-            <img
-              src={img}
-              alt=""
-              className="object-cover h-full"
-              onClick={() => setClicked(!postClicked)}
-            />
-            <div className="flex flex-row items-center">
-              <Link
-                to={"/account"}
-                className="absolute bottom-0 left-2 transform translate-y-1/2 flex flex-row items-center bg-green-500 p-1.5 rounded-2xl z-10"
-              >
-                <img src={profilePic} alt="" className="w-7 h-7 rounded-full" />
-                <p className="pl-2 text-sm text-white font-semibold">{user}</p>
-                <FontAwesomeIcon
-                  icon={faUserPlus}
-                  className="text-white pl-2"
-                />
-              </Link>
+          <Link
+            to={"/pattern"}
+            state={{
+              img: img,
+              title: title,
+              profilePic,
+              rating: rating,
+              time: time,
+              difficulty: difficulty,
+              stitch: stitch,
+              username: user,
+              color: color,
+            }}
+          >
+            <div
+              className="flex flex-col relative"
+              style={{ height: "33.33vh" }}
+            >
+              <img
+                src={img}
+                alt=""
+                className="object-cover h-full rounded-md"
+              />
+              <div className="flex flex-row items-center">
+                <Link
+                  to={"/account"}
+                  className="absolute bottom-0 left-1 transform translate-y-1/2 flex flex-row items-center bg-blue-300 p-1.5 rounded-2xl h-9 z-10"
+                >
+                  <img
+                    src={profilePic}
+                    alt=""
+                    className="w-7 h-7 rounded-full"
+                  />
+                  <p className="pl-2 text-xs text-white font-semibold">
+                    {user}
+                  </p>
+                  <FontAwesomeIcon
+                    icon={faUserPlus}
+                    className="text-white pl-2"
+                  />
+                </Link>
 
-              <div
-                className="flex items-center justify-center absolute bottom-0 right-2 transform translate-y-1/2 bg-green-500 p-1.5 w-8 h-8 rounded-full"
-                onClick={() => setLiked(!liked)}
-              >
-                {liked ? (
-                  <FontAwesomeIcon icon={faSolidHeart} className="text-white" />
-                ) : (
-                  <FontAwesomeIcon icon={faHeart} className="text-white" />
-                )}
+                <div
+                  className="flex items-center justify-center absolute bottom-0 right-2 transform translate-y-1/2 bg-blue-300 p-1.5 w-8 h-8 rounded-full"
+                  onClick={() => setLiked(!liked)}
+                >
+                  {liked ? (
+                    <FontAwesomeIcon
+                      icon={faSolidHeart}
+                      className="text-white"
+                    />
+                  ) : (
+                    <FontAwesomeIcon icon={faHeart} className="text-white" />
+                  )}
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
           <div
             className="flex flex-col"
             onClick={() => setClicked(!postClicked)}
           >
             <div className="relative flex flex-row items-center pt-8 px-4">
-              <p className="absolute left-4 font-semibold">{title}</p>
-              <div className="absolute right-4 flex flex-row items-center text-sm">
+              <p className="absolute left-2 font-semibold text-lg pt-1 ">
+                {title}
+              </p>
+              <div className="absolute right-4 flex flex-row items-center text-sm pt-1">
                 <FontAwesomeIcon icon={faStar} />
                 <p className="font-semibold pl-1">{rating}</p>
               </div>
             </div>
-            <div className="relative flex flex-row pt-6 px-4 justify-between text-xs">
+            <div
+              className="relative flex flex-row pt-6 px-4 justify-between text-xs"
+              onClick={() => setClicked(!postClicked)}
+            >
               <div className="flex flex-row items-center">
                 <FontAwesomeIcon icon={faClock} className="text-black mr-1.5" />
                 <p>{time}</p>
@@ -115,7 +146,7 @@ const HomePost = ({
               <div className="flex flex-row items-center">
                 <Link
                   to={"/account"}
-                  className="absolute bottom-0 left-2 transform translate-y-1/2 flex flex-row items-center bg-green-500 p-1.5 rounded-2xl z-10"
+                  className="absolute bottom-0 left-2 transform translate-y-1/2 flex flex-row items-center bg-blue-300 p-1.5 rounded-2xl z-10"
                 >
                   <img
                     src={profilePic}
@@ -131,7 +162,7 @@ const HomePost = ({
                   />
                 </Link>
                 <div
-                  className="flex items-center justify-center absolute bottom-0 right-2 transform translate-y-1/2 bg-green-500 p-1.5 w-8 h-8 rounded-full"
+                  className="flex items-center justify-center absolute bottom-0 right-2 transform translate-y-1/2 bg-blue-300 p-1.5 w-8 h-8 rounded-full"
                   onClick={() => setLiked(!liked)}
                 >
                   {liked ? (
@@ -183,7 +214,7 @@ const HomePost = ({
           </div>
           <div className="absolute top-0 inset-0 z-20 bg-white bg-opacity-50">
             <div className="flex flex-col items-center justify-center min-h-screen">
-              <div className="bg-amber-100 h-96 w-4/5 rounded-xl p-4 shadow-xl">
+              <div className="bg-yellow-100 h-96 w-4/5 rounded-xl p-4 shadow-xl">
                 <FontAwesomeIcon
                   className="text-2xl z-40"
                   onClick={() => setClicked(!postClicked)}
@@ -265,23 +296,6 @@ const HomePost = ({
                     </div>
                   </div>
                 </div>
-                <Link
-                  className="p-2 bg-blue-300 rounded-md"
-                  to={"/pattern"}
-                  state={{
-                    img: img,
-                    title: title,
-                    profilePic,
-                    rating: rating,
-                    time: time,
-                    difficulty: difficulty,
-                    stitch: stitch,
-                    username: user,
-                    color: color,
-                  }}
-                >
-                  View More
-                </Link>
               </div>
               <div className="fixed inset-x-0 bottom-0 z-20">
                 <Navigation />
