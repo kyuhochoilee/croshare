@@ -2,7 +2,6 @@ import React from "react";
 import Navigation from "../Navigation";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
 import AccountPosts from "./AccountPosts";
 import AccountPatterns from "./AccountPatterns";
 import { faEtsy, faYoutube } from "@fortawesome/free-brands-svg-icons";
