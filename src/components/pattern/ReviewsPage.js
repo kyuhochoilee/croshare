@@ -3,7 +3,7 @@ import Navigation from "../Navigation";
 import Review from "./Review";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { faAngleLeft, faPlus } from "@fortawesome/free-solid-svg-icons";
 
 const ReviewsPage = () => {
   let location = useLocation();
@@ -38,9 +38,15 @@ const ReviewsPage = () => {
       >
         <FontAwesomeIcon icon={faAngleLeft} className="text-gray-500" />
       </Link>
-      <h1 className="text-2xl font-bold mb-4 pt-3 text-center">
-        {title} Reviews
-      </h1>
+      <div className="flex flex-col items-center">
+        <h1 className="text-2xl font-bold mb-4 pt-3 text-center">
+          {title} Reviews
+        </h1>
+        <div className="text-center inline-flex items-center justify-center border-2 border-black p-2 rounded-full">
+          <FontAwesomeIcon icon={faPlus} className="text-gray-500 mr-2" />
+          <p className="font-semibold">Add review</p>
+        </div>
+      </div>
       <Review
         title={"A fire hat indeed!"}
         reviewPic={"/patternImgs/awesomeHat.webp"}
