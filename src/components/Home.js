@@ -15,29 +15,32 @@ const Home = () => {
             className="text-white mr-2"
           />
         </div>
-        <div className="flex overflow-auto flex-row py-2 px-3 mx-4 my-2 border-2 rounded-lg border-gray-400 items-center">
-          <FontAwesomeIcon className="text-lg text-gray-500 mr-3" icon={faFilter}/>
-          <div className="text-sm text-white font-semibold p-2 mr-3 bg-emerald-600 rounded-md">
+        <div className="flex overflow-auto flex-row py-2 px-3 mx-4 my-2 border-2 rounded-lg border-gray-200 items-center">
+          <FontAwesomeIcon
+            className="text-lg text-gray-400 mr-3"
+            icon={faFilter}
+          />
+          <div className="text-sm text-white font-semibold p-2 mr-3 bg-teal-500 rounded-2xl">
             New
           </div>
-          <div className="text-sm text-white font-semibold p-2 mr-3 bg-emerald-600 rounded-md">
+          <div className="text-sm text-white font-semibold p-2 mr-3 bg-teal-500 rounded-2xl">
             Seasonal
           </div>
-          <div className="text-sm text-white p-2 mr-3 bg-blue-400 rounded-md">
+          <div className="text-sm text-white p-2 mr-3 bg-teal-500 rounded-2xl">
             Time
           </div>
-          <div className="text-sm text-white p-2 mr-3 bg-blue-400 rounded-md">
+          <div className="text-sm text-white p-2 mr-3 bg-teal-500 rounded-2xl">
             Difficulty
           </div>
-          <div className="text-sm text-white p-2 mr-3 bg-blue-400 rounded-md">
+          <div className="text-sm text-white p-2 mr-3 bg-teal-500 rounded-2xl">
             Trending
           </div>
-          <div className="text-sm text-white p-2 mr-3 bg-blue-400 rounded-md">
+          <div className="text-sm text-white p-2 mr-3 bg-teal-500 rounded-2xl">
             Rating
           </div>
         </div>
       </div>
-      
+
       <div className="flex flex-col pb-20 pt-32">
         <div className="flex flex-row justify-between align-middle w-full space-x-4 px-4 py-4">
           <HomePost
