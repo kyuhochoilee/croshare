@@ -80,7 +80,7 @@ const ReviewsPage = () => {
         reviewPic={"/patternImgs/awesomeHat.webp"}
         reviewTime={"9 weeks ago"}
         description={
-          "Easy peasy fire hat squeezy. Feelin like lightnight mcqueen in this thing"
+          "Easy peasy fire hat squeezy. Feelin like lightning mcqueen in this thing"
         }
         time={2}
         difficulty={"Beginner"}

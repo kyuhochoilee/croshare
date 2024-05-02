@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import AccountPosts from "./AccountPosts";
 import AccountPatterns from "./AccountPatterns";
+import { faEtsy, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const Account = ({ profilePic, username }) => {
   const [posts, setPosts] = useState(true);
@@ -16,6 +17,14 @@ const Account = ({ profilePic, username }) => {
           <div className="flex flex-col px-4">
             <p className="font-bold text-3xl">{username}</p>
             <p className="font-semibold">crosharing since 1/1/24</p>
+            <div className="flex space-x-4 mt-1">
+              <button className="bg-orange-500 p-1 rounded-full w-14">
+                <FontAwesomeIcon icon={faEtsy} className="text-white" />
+              </button>
+              <button className="bg-red-500 p-1 rounded-full w-14">
+                <FontAwesomeIcon icon={faYoutube} className="text-white" />
+              </button>
+            </div>
           </div>
         </div>
         <div onClick={() => setPosts(!posts)}>
