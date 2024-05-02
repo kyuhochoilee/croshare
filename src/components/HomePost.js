@@ -33,7 +33,7 @@ const HomePost = ({
   return (
     <>
       {!postClicked ? (
-        <div className="flex flex-col w-1/2 pb-4">
+        <div className="flex flex-col w-1/2 bg-neutral-100 rounded-lg">
           <Link
             to={"/pattern"}
             state={{
@@ -48,45 +48,45 @@ const HomePost = ({
               color: color,
             }}
           >
-            <div
-              className="flex flex-col relative"
-              style={{ height: "33.33vh" }}
-            >
+            <div className="flex flex-col relative" style={{ height: "25vh" }}>
               <img
                 src={img}
                 alt=""
-                className="object-cover h-full rounded-md"
+                className="object-cover h-full rounded-lg"
               />
               <div className="flex flex-row items-center">
                 <Link
                   to={"/account"}
-                  className="absolute bottom-0 left-1 transform translate-y-1/2 flex flex-row items-center bg-teal-500 p-1.5 rounded-2xl h-9 z-10"
+                  className="absolute bottom-0 left-1 transform translate-y-1/2 flex flex-row items-center bg-teal-500 rounded-2xl h-5 z-10"
                 >
                   <img
                     src={profilePic}
                     alt=""
-                    className="w-7 h-7 rounded-full"
+                    className="w-5 h-5 rounded-full"
                   />
                   <p className="pl-2 text-xs text-white font-semibold">
                     {user}
                   </p>
                   <FontAwesomeIcon
                     icon={faUserPlus}
-                    className="text-white pl-2"
+                    className="text-white px-2 w-4 h-4 "
                   />
                 </Link>
 
                 <div
-                  className="flex items-center justify-center absolute bottom-0 right-2 transform translate-y-1/2 bg-red-300 p-1.5 w-8 h-8 rounded-full"
+                  className="flex items-center justify-center absolute bottom-0 right-2 transform translate-y-1/2 bg-red-300 p-1.5 w-5 h-5 rounded-full"
                   onClick={() => setLiked(!liked)}
                 >
                   {liked ? (
                     <FontAwesomeIcon
                       icon={faSolidHeart}
-                      className="text-white"
+                      className="text-white p-2 w-2 h-2"
                     />
                   ) : (
-                    <FontAwesomeIcon icon={faHeart} className="text-white" />
+                    <FontAwesomeIcon
+                      icon={faHeart}
+                      className="text-white p-2 w-3 h-3"
+                    />
                   )}
                 </div>
               </div>
@@ -97,12 +97,12 @@ const HomePost = ({
             onClick={() => setClicked(!postClicked)}
           >
             <div className="relative flex flex-row items-center pt-8 px-4">
-              <p className="absolute left-2 font-semibold text-lg py-2 ">
+              <p className="absolute left-2 font-semibold text-sm py-2 ">
                 {title}
               </p>
               <div className="absolute right-4 flex flex-row items-center text-sm pt-1">
                 <FontAwesomeIcon icon={faStar} />
-                <p className="font-semibold pl-1">{rating}</p>
+                <p className="font-semibold pl-1 text-xs">{rating}</p>
               </div>
             </div>
             <div
@@ -125,7 +125,7 @@ const HomePost = ({
                   icon={faAlignCenter}
                   className="text-black mr-1.5"
                 />
-                <p>{stitch} stiches</p>
+                <p>{stitch} </p>
               </div>
             </div>
           </div>
@@ -181,7 +181,7 @@ const HomePost = ({
               onClick={() => setClicked(!postClicked)}
             >
               <div className="relative flex flex-row items-center pt-8 px-4">
-                <p className="absolute left-4 font-semibold">{title}</p>
+                <p className="absolute left-4 font-semibol text-md">{title}</p>
                 <div className="absolute right-4 flex flex-row items-center text-sm">
                   <FontAwesomeIcon icon={faStar} />
                   <p className="font-semibold pl-1">{rating}</p>
@@ -207,7 +207,7 @@ const HomePost = ({
                     icon={faAlignCenter}
                     className="text-black mr-1.5"
                   />
-                  <p>{stitch} stiches</p>
+                  <p>{stitch} </p>
                 </div>
               </div>
             </div>
