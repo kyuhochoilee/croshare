@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faUser, faUserGroup } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faUser, faUserGroup, faSquarePlus } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
@@ -12,6 +12,9 @@ const Navigation = () => {
         </Link>
         <Link to="/friendfeed">
           <FontAwesomeIcon icon={faUserGroup} />
+        </Link>
+        <Link to="/addpost">
+          <FontAwesomeIcon icon={faSquarePlus}/>
         </Link>
         <Link to="/account">
           <FontAwesomeIcon icon={faUser} />

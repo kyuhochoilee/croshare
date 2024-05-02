@@ -1,24 +1,45 @@
 import React from "react";
 import Navigation from "./Navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faFilter } from "@fortawesome/free-solid-svg-icons";
 import HomePost from "./HomePost";
 
 const Home = () => {
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 bg-white z-50 rounded-md">
-        <p className="text-2xl font-bold pt-3 pl-3 pb-3">CroShare</p>
+      <div className="fixed top-0 left-0 right-0 bg-white z-50 rounded-md shadow-sm">
+        <p className="text-2xl font-bold pt-4 pl-4 pb-3">CroShare</p>
         <div className="fixed top-4 right-4 z-10 bg-yellow-400 p-1.5 w-8 h-8 rounded-full flex items-center">
           <FontAwesomeIcon
             icon={faMagnifyingGlass}
             className="text-white mr-2"
           />
         </div>
+        <div className="flex overflow-auto flex-row py-2 px-3 mx-4 my-2 border-2 rounded-lg border-gray-400 items-center">
+          <FontAwesomeIcon className="text-lg text-gray-500 mr-3" icon={faFilter}/>
+          <div className="text-sm text-white font-semibold p-2 mr-3 bg-emerald-600 rounded-md">
+            New
+          </div>
+          <div className="text-sm text-white font-semibold p-2 mr-3 bg-emerald-600 rounded-md">
+            Seasonal
+          </div>
+          <div className="text-sm text-white p-2 mr-3 bg-blue-400 rounded-md">
+            Time
+          </div>
+          <div className="text-sm text-white p-2 mr-3 bg-blue-400 rounded-md">
+            Difficulty
+          </div>
+          <div className="text-sm text-white p-2 mr-3 bg-blue-400 rounded-md">
+            Trending
+          </div>
+          <div className="text-sm text-white p-2 mr-3 bg-blue-400 rounded-md">
+            Rating
+          </div>
+        </div>
       </div>
-
-      <div className="flex flex-col">
-        <div className="flex flex-row justify-between align-middle w-full space-x-4 px-4 py-4 pt-14">
+      
+      <div className="flex flex-col pb-20 pt-32">
+        <div className="flex flex-row justify-between align-middle w-full space-x-4 px-4 py-4">
           <HomePost
             className="h-1/3"
             img={"/patternImgs/awesomeHat.webp"}
