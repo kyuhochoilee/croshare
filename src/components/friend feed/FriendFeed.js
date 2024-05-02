@@ -6,7 +6,7 @@ const FriendFeed = ({ profilePic, username }) => {
   return (
     <>
       <div className="flex flex-col py-12 px-5">
-        <div className="fixed top-0 bg-white">
+        <div className="fixed top-0 bg-white w-full">
           <p className="text-2xl font-bold font-fredoka pt-4 pb-4">Friends</p>
         </div>
 
