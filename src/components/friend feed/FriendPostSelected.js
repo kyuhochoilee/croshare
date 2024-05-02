@@ -37,7 +37,7 @@ const FriendPostSelected = () => {
             </div>
           </div>
         </div>
-        <p className="font-bold text-xl">{title}</p>
+        <p className="font-semibold font-fredoka text-xl">{title}</p>
         <p className="text-gray-400 text-sm py-2">{postTime} - April 5, 2024</p>
         <p className="flex flex-row text-black text-sm">{description}</p>
         <div className="my-4 border-t-2 w-full border-gray-300" />

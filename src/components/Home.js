@@ -8,7 +8,9 @@ const Home = () => {
   return (
     <>
       <div className="fixed top-0 left-0 right-0 bg-white z-50 rounded-md shadow-sm">
-        <p className="text-2xl font-bold pt-4 pl-4 pb-3">CroShare</p>
+        <p className="text-2xl font-bold pt-4 pl-4 pb-3 font-fredoka">
+          CroShare
+        </p>
         <div className="fixed top-4 right-4 z-10 bg-yellow-400 p-1.5 w-8 h-8 rounded-full flex items-center">
           <FontAwesomeIcon
             icon={faMagnifyingGlass}

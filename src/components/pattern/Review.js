@@ -19,7 +19,7 @@ const Review = ({
           className="w-10 h-10 rounded-full mr-4"
         />
         <div>
-          <h2 className="text-lg font-bold">{username}</h2>
+          <h2 className="text-md font-bold">{username}</h2>
           <p className="text-sm text-gray-500">{reviewTime}</p>
         </div>
       </div>
@@ -30,7 +30,7 @@ const Review = ({
           className="w-1/2 h-auto rounded-lg mb-4"
         />
       )}
-      <h1 className="text-xl font-bold mb-2">{title}</h1>
+      <h1 className="text-xl font-semibold font-fredoka mb-2">{title}</h1>
       <p className="text-gray-700 mb-4">{description}</p>
       <div className="flex items-center">
         <p className="mr-4">

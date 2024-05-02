@@ -46,19 +46,19 @@ const Pattern = () => {
           />
         </Link>
 
-        <h1 className="pt-4 pb-4 text-2xl text-black font-bold text-center underline">
+        <h1 className="pt-4 pb-4 text-2xl text-black font-semibold font-fredoka text-center">
           {username}'s {title}
         </h1>
         <img src={img} className="w-3/4 mx-auto rounded-2xl pt-2 pb-2" />
         <div className="flex justify-center p-2">
-          <div className="bg-blue-200 rounded-full border-2 border-black px-2 py-1 mx-2 font-semibold">
+          <div className="bg-blue-200 rounded-full border-2 border-black px-2 py-1 mx-2 font-semibold font-fredoka">
             View Pattern
           </div>
-          <div className="bg-blue-200 rounded-full  border-2 border-black px-2 py-1 mx-2 font-semibold">
+          <div className="bg-blue-200 rounded-full  border-2 border-black px-2 py-1 mx-2 font-semibold font-fredoka">
             Download Pattern
           </div>
           <Link
-            className="bg-blue-200 rounded-full  border-2 border-black px-2 py-1 mx-2 font-semibold"
+            className="bg-blue-200 rounded-full  border-2 border-black px-2 py-1 mx-2 font-semibold font-fredoka"
             to={"/reviews"}
             state={{
               username: username,
@@ -77,7 +77,7 @@ const Pattern = () => {
         </div>
 
         <div className="pt-4">
-          <h2 className="text-lg text-black font-bold text-left underline pl-12 pb-2">
+          <h2 className="text-lg text-black font-semibold font-fredoka text-center underline pb-2">
             Metrics
           </h2>
           <div className="flex items-center justify-center">
@@ -141,11 +141,11 @@ const Pattern = () => {
           </table>
         </div>
 
-        <div className="pt-4">
-          <h2 className="text-lg text-black font-bold text-left underline pl-12 pb-2">
+        <div className="pt-4 ">
+          <h2 className="text-lg text-black font-semibold font-fredoka text-center underline pb-2">
             Description
           </h2>
-          <p className="text-left pl-12 pr-12 text-grey">
+          <p className="text-left pl-12 pr-12 pb-12 text-grey">
             Now let me tell you about this pattern. Ohhhhh it is so nice. Like
             you would not beleive it. Even though it is in fact called an
             awesome hat, I don't think the name "awesome" really does it

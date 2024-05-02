@@ -39,12 +39,12 @@ const ReviewsPage = () => {
         <FontAwesomeIcon icon={faAngleLeft} className="text-gray-500" />
       </Link>
       <div className="flex flex-col items-center">
-        <h1 className="text-2xl font-bold mb-4 pt-3 text-center">
+        <h1 className="text-2xl font-semibold font-fredoka mb-4 pt-3 text-center">
           {title} Reviews
         </h1>
         <div className="text-center inline-flex items-center justify-center border-2 border-black p-2 rounded-full">
           <FontAwesomeIcon icon={faPlus} className="text-gray-500 mr-2" />
-          <p className="font-semibold">Add review</p>
+          <p className="font-semibold font-fredoka">Add review</p>
         </div>
       </div>
       <Review

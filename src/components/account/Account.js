@@ -15,7 +15,7 @@ const Account = ({ profilePic, username }) => {
         <div className="flex flex-row items-center">
           <img src={profilePic} alt="" className="w-20 h-20 rounded-full" />
           <div className="flex flex-col px-4">
-            <p className="font-bold text-3xl">{username}</p>
+            <p className="font-semibold font-fredoka text-3xl">{username}</p>
             <p className="font-semibold">crosharing since 1/1/24</p>
             <div className="flex space-x-4 mt-1">
               <button className="bg-orange-500 p-1 rounded-full w-14">

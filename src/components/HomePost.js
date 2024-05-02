@@ -97,7 +97,7 @@ const HomePost = ({
             onClick={() => setClicked(!postClicked)}
           >
             <div className="relative flex flex-row items-center pt-8 px-4">
-              <p className="absolute left-2 font-semibold text-sm py-2 ">
+              <p className="absolute left-2 font-semibold font-fredoka text-sm py-2 ">
                 {title}
               </p>
               <div className="absolute right-4 flex flex-row items-center text-sm pt-1">
@@ -181,7 +181,9 @@ const HomePost = ({
               onClick={() => setClicked(!postClicked)}
             >
               <div className="relative flex flex-row items-center pt-8 px-4">
-                <p className="absolute left-4 font-semibol text-md">{title}</p>
+                <p className="absolute left-4 font-semibold font-fredoka text-md">
+                  {title}
+                </p>
                 <div className="absolute right-4 flex flex-row items-center text-sm">
                   <FontAwesomeIcon icon={faStar} />
                   <p className="font-semibold pl-1">{rating}</p>
@@ -221,7 +223,7 @@ const HomePost = ({
                   icon={faAngleLeft}
                 />
                 <div className="flex flex-col items-center pb-2">
-                  <p className="font-bold text-xl mb-3 w-auto">
+                  <p className="font-semibold font-fredoka text-xl mb-3 w-auto">
                     {title} Metrics
                   </p>
                   <FontAwesomeIcon className="text-2xl py-2" icon={faClock} />

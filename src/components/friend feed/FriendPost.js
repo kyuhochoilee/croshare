@@ -30,7 +30,9 @@ const FriendPost = ({
             src={postPic}
             alt=""
           ></img>
-          <p className="text-gray-800 font-bold text-lg pt-2">{title}</p>
+          <p className="text-gray-800 font-semibold font-fredoka text-xl pt-2">
+            {title}
+          </p>
         </Link>
 
         <div className="flex flex-row justify-between py-2">
