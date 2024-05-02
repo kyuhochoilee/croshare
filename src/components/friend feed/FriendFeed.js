@@ -5,10 +5,8 @@ import FriendPost from "./FriendPost";
 const FriendFeed = ({ profilePic, username }) => {
   return (
     <>
-      <div className="flex flex-col py-12 px-5">
-        <div className="fixed top-0 bg-white">
-          <p className="text-2xl font-bold font-fredoka pt-4 pb-4">Friends</p>
-        </div>
+      <div className="flex flex-col py-2 px-5">
+        <p className="text-2xl font-bold font-fredoka pt-4 pb-4">Friends</p>
 
         <div>
           <FriendPost
